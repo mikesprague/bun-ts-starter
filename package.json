@@ -13,7 +13,7 @@
     "format:check": "bun x oxfmt --check src",
     "lint": "bun x oxlint src",
     "start": "bun run src/index.ts",
-    "tests": "bun run format:check && bun run lint && bun run typecheck && bun test",
+    "tests": "bun format:check && bun lint && bun typecheck && bun env:scan",
     "typecheck": "bun x tsc --noEmit"
   },
   "author": {
