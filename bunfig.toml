@@ -1,0 +1,5 @@
+# disable automatic .env loading
+env = false
+
+# preload varlock for auto-loading environment variables from .env files
+preload = ["varlock/auto-load"]
