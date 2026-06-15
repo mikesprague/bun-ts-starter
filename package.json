@@ -1,0 +1,54 @@
+{
+  "name": "bun-ts-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal starter template for a TS project using Bun",
+  "scripts": {
+    "declarations": "bun x rimraf types/ && bun x tsc --emitDeclarationOnly --declaration true --declarationDir './types'",
+    "dev": "bun run src/index.ts --trace-warnings --inspect=0.0.0.0:9229",
+    "env:load": "bun x varlock load",
+    "env:scan": "bun x varlock scan",
+    "format": "bun x oxfmt src",
+    "format:check": "bun x oxfmt --check src",
+    "lint": "bun x oxlint src",
+    "start": "bun run src/index.ts",
+    "tests": "bun run format:check && bun run lint && bun run typecheck && bun test",
+    "typecheck": "bun x tsc --noEmit"
+  },
+  "author": {
+    "name": "Michael Sprague",
+    "email": "mikesprague@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/mikesprague/bun-ts-starter"
+  },
+  "engines": {
+    "bun": ">= 1.3.x",
+    "node": ">= 24.x",
+    "npm": ">= 11.x"
+  },
+  "packageManager": "bun@1.3.14",
+  "dependencies": {
+    "varlock": "1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.3",
+    "bun": "1.3.14",
+    "bun-types": "1.3.14",
+    "cz-git": "1.13.1",
+    "oxfmt": "0.54.0",
+    "oxlint": "1.69.0",
+    "rimraf": "6.1.3",
+    "typescript": "6.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  },
+  "volta": {
+    "node": "26.3.0",
+    "npm": "11.17.0"
+  }
+}
