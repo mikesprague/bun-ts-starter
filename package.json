@@ -30,7 +30,7 @@
   },
   "packageManager": "bun@1.3.14",
   "dependencies": {
-    "varlock": "1.6.1"
+    "varlock": "1.7.0"
   },
   "devDependencies": {
     "@types/node": "25.9.3",
