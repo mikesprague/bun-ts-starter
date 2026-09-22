@@ -33,7 +33,7 @@
     "varlock": "1.19.0"
   },
   "devDependencies": {
-    "@types/node": "26.6.1",
+    "@types/node": "26.6.2",
     "bun": "1.4.2",
     "bun-types": "1.4.2",
     "cz-git": "1.14.0",
